@@ -3,6 +3,7 @@ package com.epam;
 /**
  * @author Evgeny Borisov
  */
+@Lazy
 @Singleton
 public class RecommendatorImpl implements Recommendator {
     @InjectProperty("wisky")

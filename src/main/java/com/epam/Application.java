@@ -12,6 +12,7 @@ public class Application {
         ObjectFactory objectFactory = new ObjectFactory(context);
         //todo homework - init all singletons which are not lazy
         context.setFactory(objectFactory);
+        context.scanAndInitSingletons();
         return context;
     }
 }
